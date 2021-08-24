@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FinalMyPhrasalVerbsProject</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="favorites">   Favorites   </string>
+    <string name="description">Description</string>
+    <string name="lesson">Lesson</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="title_search">title_search</string>
+    <string name="title_profile">title_profile</string>
+    <string name="title_favorite">title_favorite</string>
+    <string name="phrasal_verbs">Phrasal Verbs</string>
+    <string name="searchh">Search</string>
+    <string name="dictionary">  Dictionary  </string>
+    <string name="profile">Profile</string>
+    <string name="more">More</string>
+    <string name="verbs">Verbs</string>
+</resources>
