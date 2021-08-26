@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -45,11 +46,11 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.CardHolder
     public class CardHolder extends RecyclerView.ViewHolder{
 
         public TextView txt_lessonName;
-        public Button btn_favorite;
+        public CheckBox checkBox_favorite;
         public CardHolder(@NonNull View itemView) {
             super(itemView);
             txt_lessonName = itemView.findViewById(R.id.txt_lessonNameGround);
-            btn_favorite = itemView.findViewById(R.id.btn_favoriteVerbs);
+            checkBox_favorite = itemView.findViewById(R.id.checkbox_favorite);
 
 
         }

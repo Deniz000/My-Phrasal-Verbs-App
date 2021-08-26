@@ -23,11 +23,12 @@
             android:textColor="@color/blue"
             android:textSize="28sp" />
 
-        <Button
-            android:id="@+id/btn_favoriteVerbs"
+        <CheckBox
+            android:id="@+id/checkbox_favorite"
             android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/favorite_full"
+            android:layout_height="50dp"
+            android:button="@drawable/selector_wishlist_item"
             android:layout_alignParentEnd="true"/>
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
