@@ -1,17 +1,17 @@
-package com.example.finalmyphrasalverbsproject;
+package com.example.finalmyphrasalverbsproject.adapters;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.finalmyphrasalverbsproject.R;
+import com.example.finalmyphrasalverbsproject.models.Lesson;
 
 import java.util.ArrayList;
 

@@ -12,10 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalMyPhrasalVerbsProject">
         <activity
+            android:name=".DictionaryActivity"
+            android:exported="true" />
+        <activity
             android:name=".PhrasalVerbsActivity"
             android:exported="true" />
-        <activity android:name=".MainActivity"
-            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"

@@ -1,11 +1,14 @@
 package com.example.finalmyphrasalverbsproject;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.example.finalmyphrasalverbsproject.adapters.LessonAdapter;
+import com.example.finalmyphrasalverbsproject.models.Lesson;
+
 public class PhrasalVerbsActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -19,7 +22,7 @@ public class PhrasalVerbsActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        lessonAdapter = new LessonAdapter(this,Lesson.getData());
+        lessonAdapter = new LessonAdapter(this, Lesson.getData());
         recyclerView.setAdapter(lessonAdapter);
     }
 }

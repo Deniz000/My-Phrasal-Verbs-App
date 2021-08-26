@@ -19,4 +19,6 @@
     <string name="more">More</string>
     <string name="verbs">Verbs</string>
     <string name="verb_name">Verb Name</string>
+    <string name="words">words</string>
+    <string name="means">means</string>
 </resources>

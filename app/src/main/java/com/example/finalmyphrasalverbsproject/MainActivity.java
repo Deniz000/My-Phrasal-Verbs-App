@@ -11,18 +11,26 @@ import com.example.finalmyphrasalverbsproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView cardView1;
+    CardView cardView1, cardView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         cardView1 = findViewById(R.id.card_phrasalVerbs);
+        cardView2 = findViewById(R.id.card_dictionary);
 
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, PhrasalVerbsActivity.class));
+            }
+        });
+
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,DictionaryActivity.class));
             }
         });
     }

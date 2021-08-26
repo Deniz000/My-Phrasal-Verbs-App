@@ -1,4 +1,4 @@
-package com.example.finalmyphrasalverbsproject;
+package com.example.finalmyphrasalverbsproject.models;
 
 import java.util.ArrayList;
 
