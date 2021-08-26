@@ -19,15 +19,14 @@
             android:background="@drawable/card2_background"
             android:layout_margin="10dp"
             android:padding="3dp"
+            android:clickable="true"
             android:elevation="10dp">
 
         </androidx.appcompat.widget.SearchView>
-        <ListView
-           android:id="@+id/list_lessons"
-            android:background="@color/blue"
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/lesson_words_layout"
-            />
+            android:id="@+id/recyclerView"
+            tools:listitem="@layout/list_item"/>
     </LinearLayout>
 </LinearLayout>

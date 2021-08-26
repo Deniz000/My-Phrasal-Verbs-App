@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/rootCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/floralWhite"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/txt_lessonNameGround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verb_name"
+            android:textColor="@color/blue"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_favoriteVerbs"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/favorite_full"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

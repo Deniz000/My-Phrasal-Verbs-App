@@ -18,4 +18,5 @@
     <string name="profile">Profile</string>
     <string name="more">More</string>
     <string name="verbs">Verbs</string>
+    <string name="verb_name">Verb Name</string>
 </resources>

@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalMyPhrasalVerbsProject">
         <activity
-            android:name=".ExamplesOfWordsActivity"
-            android:exported="true" />
-        <activity
             android:name=".PhrasalVerbsActivity"
             android:exported="true" />
         <activity android:name=".MainActivity"
