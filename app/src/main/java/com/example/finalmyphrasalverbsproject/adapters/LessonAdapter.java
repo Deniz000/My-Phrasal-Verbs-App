@@ -1,6 +1,7 @@
 package com.example.finalmyphrasalverbsproject.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,12 +18,12 @@ import java.util.ArrayList;
 
 public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.CardHolder> {
 
-    private ArrayList<Lesson> mDataList;
+    final ArrayList<Lesson> mDataList;
     LayoutInflater inflater;
 
-    public LessonAdapter(Context context, ArrayList<Lesson> lessonList) {
+    public LessonAdapter(Context context, ArrayList<Lesson> mLessonList) {
         inflater = LayoutInflater.from(context);
-        this.mDataList = lessonList;
+        this.mDataList = mLessonList;
     }
 
     @NonNull
@@ -38,21 +39,27 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.CardHolder
         holder.txt_lessonName.setText(mDataList.get(position).getLessonName());
     }
 
+    public void moveItem(int position, Lesson itemtogo){
+        Intent intent = new Intent();
+        mDataList.remove(position);
+    }
     @Override
     public int getItemCount() {
         return mDataList.size();
     }
 
-    public class CardHolder extends RecyclerView.ViewHolder{
+    public static class CardHolder extends RecyclerView.ViewHolder{
 
         public TextView txt_lessonName;
         public CheckBox checkBox_favorite;
         public CardHolder(@NonNull View itemView) {
             super(itemView);
             txt_lessonName = itemView.findViewById(R.id.txt_lessonNameGround);
-            checkBox_favorite = itemView.findViewById(R.id.checkbox_favorite);
+            checkBox_favorite = itemView.findViewById(R.id.checkbox_favorite_verb);
 
+            if (checkBox_favorite.isChecked()){
 
+            }
         }
     }
 }

@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalMyPhrasalVerbsProject">
         <activity
+            android:name=".LearnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:exported="true" />
+        <activity
             android:name=".DictionaryActivity"
             android:exported="true" />
         <activity

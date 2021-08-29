@@ -15,10 +15,12 @@
     <string name="phrasal_verbs">Phrasal Verbs</string>
     <string name="searchh">Search</string>
     <string name="dictionary">  Dictionary  </string>
-    <string name="profile">Profile</string>
     <string name="more">More</string>
-    <string name="verbs">Verbs</string>
     <string name="verb_name">Verb Name</string>
     <string name="words">words</string>
     <string name="means">means</string>
+    <string name="learn">Learn</string>
+    <string name="verbs">Verbs</string>
+    <string name="user_name">User Name</string>
+    <string name="name">Name</string>
 </resources>

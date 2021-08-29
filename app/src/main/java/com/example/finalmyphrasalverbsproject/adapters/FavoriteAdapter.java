@@ -7,53 +7,60 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.finalmyphrasalverbsproject.R;
-import com.example.finalmyphrasalverbsproject.models.Word;
+import com.example.finalmyphrasalverbsproject.models.Favorite;
 
 import java.util.ArrayList;
 
-public class WordAdapter extends RecyclerView.Adapter<WordAdapter.CardHolder> {
 
-    ArrayList<Word> mDataListWord;
+public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.CardHolder> {
+
+    ArrayList<Favorite> mDataListFavorite;
     LayoutInflater inflater;
 
-    public WordAdapter(Context context, ArrayList<Word> mDataListWord) {
+    public FavoriteAdapter(Context context, ArrayList<Favorite> mfavoriteList) {
         inflater = LayoutInflater.from(context);
-        this.mDataListWord = mDataListWord;
+        this.mDataListFavorite = mfavoriteList;
+
     }
 
     @NonNull
     @Override
     public CardHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View cardView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.list_view_word,parent,false);
+                .inflate(R.layout.list_item_favorite,parent,false);
         return new CardHolder(cardView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull CardHolder holder, int position) {
-        holder.txt_word.setText(mDataListWord.get(position).getWord());
-        holder.txt_mean.setText(mDataListWord.get(position).getMean());
+
+        holder.txt_word.setText(mDataListFavorite.get(position).getLessonWord());
+        holder.txt_word.setText(mDataListFavorite.get(position).getLessonVerbsName());
+        holder.txt_mean.setText(mDataListFavorite.get(position).getLessonMean());
     }
 
     @Override
     public int getItemCount() {
-        return mDataListWord.size();
+        return mDataListFavorite.size();
     }
 
-    public static class CardHolder extends RecyclerView.ViewHolder{
+    public class CardHolder extends RecyclerView.ViewHolder {
+
 
         TextView txt_word, txt_mean;
         CheckBox checkBox_fav;
         public CardHolder(@NonNull View itemView) {
             super(itemView);
-            txt_word = itemView.findViewById(R.id.txt_wrodNameGround);
-            txt_mean = itemView.findViewById(R.id.txt_meanNameGround);
-            checkBox_fav = itemView.findViewById(R.id.checkbox_favorite_word);
+            txt_word = itemView.findViewById(R.id.txt_wordOrverb);
+            txt_mean = itemView.findViewById(R.id.txt_mean);
+            checkBox_fav = itemView.findViewById(R.id.checkbox_favorite_favorite);
 
         }
     }
 }
+

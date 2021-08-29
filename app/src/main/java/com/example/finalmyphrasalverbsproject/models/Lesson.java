@@ -6,9 +6,6 @@ public class Lesson {
 
     private String lessonName;
 
-//    public Lesson(String lessonName) {
-//        this.lessonName = lessonName;
-//    }
 
     public String getLessonName() {
         return lessonName;
@@ -30,9 +27,10 @@ public class Lesson {
                 "verbs 6",
                 "verbs 7"
         };
-        for (int i = 0; i < list.length; i++){
+
+        for (String s : list) {
             Lesson gecici = new Lesson();
-            gecici.setLessonName(list[i]);
+            gecici.setLessonName(s);
 
             dataList.add(gecici);
         }

@@ -24,7 +24,7 @@
             android:textSize="28sp" />
 
         <CheckBox
-            android:id="@+id/checkbox_favorite"
+            android:id="@+id/checkbox_favorite_verb"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:button="@drawable/selector_wishlist_item"

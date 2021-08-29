@@ -13,12 +13,14 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.SearchView
-            android:id="@+id/search_view"
+            android:id="@+id/search_view_phrasal_verbs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/card2_background"
             android:layout_margin="10dp"
             android:padding="3dp"
+            app:queryHint="Search for..."
+            app:iconifiedByDefault="false"
             android:clickable="true"
             android:elevation="10dp">
 
