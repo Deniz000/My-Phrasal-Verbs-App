@@ -28,24 +28,24 @@ public class Word {
 
         String[] listWord = {
                 "word 1",
-                "word 1",
-                "word 1",
-                "word 1",
-                "word 1",
-                "word 1",
-                "word 1",
-                "word 1",
+                "word 2",
+                "word 3",
+                "word 4",
+                "word 5",
+                "deneme",
+                "word 6",
+                "word 7",
                 "word end"
         };
         String[] listMean = {
                 "mean 1",
-                "mean 1",
-                "mean 1",
-                "mean 1",
-                "mean 1",
-                "mean 1",
-                "mean 1",
-                "mean 1",
+                "mean 2",
+                "mean 3",
+                "mean 4",
+                "deneme mean",
+                "mean 5",
+                "mean 6",
+                "mean 7",
                 "mean end",
         };
         for (int i = 0; i < listWord.length; i++){

@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.finalmyphrasalverbsproject.R;
+import com.example.finalmyphrasalverbsproject.models.Lesson;
 import com.example.finalmyphrasalverbsproject.models.Word;
 
 import java.util.ArrayList;
@@ -44,6 +45,10 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.CardHolder> {
         return mDataListWord.size();
     }
 
+    public void filterList(ArrayList<Word> filteredList){
+        mDataListWord = filteredList;
+        notifyDataSetChanged();
+    }
     public static class CardHolder extends RecyclerView.ViewHolder{
 
         TextView txt_word, txt_mean;

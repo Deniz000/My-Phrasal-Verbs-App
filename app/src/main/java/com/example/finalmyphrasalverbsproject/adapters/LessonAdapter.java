@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.CardHolder> {
 
-    final ArrayList<Lesson> mDataList;
+    ArrayList<Lesson> mDataList;
     LayoutInflater inflater;
 
     public LessonAdapter(Context context, ArrayList<Lesson> mLessonList) {
@@ -46,6 +46,11 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.CardHolder
     @Override
     public int getItemCount() {
         return mDataList.size();
+    }
+
+    public void filterList(ArrayList<Lesson> filteredList){
+        mDataList = filteredList;
+        notifyDataSetChanged();
     }
 
     public static class CardHolder extends RecyclerView.ViewHolder{
