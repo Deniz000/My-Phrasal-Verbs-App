@@ -36,8 +36,9 @@
     </LinearLayout>
     <CheckBox
         android:id="@+id/checkbox_favorite_favorite"
-        android:layout_width="50dp"
+        android:layout_width="30dp"
         android:layout_height="50dp"
+        android:textColor="@color/floralWhite"
         android:layout_gravity="bottom|end"
         android:button="@drawable/selector_wishlist_item"/>
 </androidx.cardview.widget.CardView>

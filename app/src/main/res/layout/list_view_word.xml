@@ -8,12 +8,16 @@
     android:layout_marginTop="5dp"
     app:cardCornerRadius="10dp"
     android:id="@+id/rootCardView">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/floralWhite"
-        android:orientation="vertical"
-        android:padding="15dp">
+        android:padding="10dp"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/txt_wrodNameGround"
@@ -21,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="@string/words"
             android:textColor="@color/blue"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txt_meanNameGround"
@@ -29,12 +33,17 @@
             android:layout_height="wrap_content"
             android:text="@string/means"
             android:textColor="@color/blue"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
     </LinearLayout>
     <CheckBox
         android:id="@+id/checkbox_favorite_word"
-        android:layout_width="50dp"
+        android:layout_width="30dp"
         android:layout_height="50dp"
+        android:textColor="@color/floralWhite"
         android:layout_gravity="bottom|end"
+        android:focusable="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
         android:button="@drawable/selector_wishlist_item"/>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>
