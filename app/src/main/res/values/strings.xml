@@ -23,4 +23,6 @@
     <string name="verbs">Verbs</string>
     <string name="user_name">User Name</string>
     <string name="name">Name</string>
+    <string name="verb_description">Verb Description</string>
+    <string name="sentence_1">sentence_1</string>
 </resources>

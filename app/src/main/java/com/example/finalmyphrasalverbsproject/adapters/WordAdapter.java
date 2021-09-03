@@ -1,29 +1,37 @@
 package com.example.finalmyphrasalverbsproject.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.finalmyphrasalverbsproject.R;
+import com.example.finalmyphrasalverbsproject.VerbsActivity;
+import com.example.finalmyphrasalverbsproject.WordActivity;
 import com.example.finalmyphrasalverbsproject.models.Lesson;
 import com.example.finalmyphrasalverbsproject.models.Word;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class WordAdapter extends RecyclerView.Adapter<WordAdapter.CardHolder> {
 
     ArrayList<Word> mDataListWord;
     LayoutInflater inflater;
+    List<String> selectedValuesWord;
+    Context context;
 
     public WordAdapter(Context context, ArrayList<Word> mDataListWord) {
         inflater = LayoutInflater.from(context);
         this.mDataListWord = mDataListWord;
+        this.context = context;
     }
 
     @NonNull
@@ -36,8 +44,11 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.CardHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull CardHolder holder, int position) {
+        Word word = new Word();
         holder.txt_word.setText(mDataListWord.get(position).getWord());
         holder.txt_mean.setText(mDataListWord.get(position).getMean());
+        
+
     }
 
     @Override

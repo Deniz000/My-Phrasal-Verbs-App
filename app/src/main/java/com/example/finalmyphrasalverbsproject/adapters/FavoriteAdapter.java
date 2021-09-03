@@ -22,6 +22,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.CardHo
     ArrayList<Favorite> mDataListFavorite;
     LayoutInflater inflater;
 
+
     public FavoriteAdapter(Context context, ArrayList<Favorite> mfavoriteList) {
         inflater = LayoutInflater.from(context);
         this.mDataListFavorite = mfavoriteList;
