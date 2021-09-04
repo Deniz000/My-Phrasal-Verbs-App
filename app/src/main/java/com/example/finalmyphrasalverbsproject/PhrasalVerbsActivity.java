@@ -34,7 +34,7 @@ public class PhrasalVerbsActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        lessonAdapter = new LessonAdapter(this, Lesson.getData());
+        lessonAdapter = new LessonAdapter(PhrasalVerbsActivity.this, Lesson.getData());
         recyclerView.setAdapter(lessonAdapter);
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {

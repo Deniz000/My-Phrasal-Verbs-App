@@ -30,7 +30,7 @@ public class DictionaryActivity extends AppCompatActivity {
         recyclerView2.setHasFixedSize(true);
         recyclerView2.setLayoutManager(new LinearLayoutManager(this));
 
-        wordAdapter = new WordAdapter(this, Word.getData());
+        wordAdapter = new WordAdapter(DictionaryActivity.this, Word.getData());
         recyclerView2.setAdapter(wordAdapter);
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {

@@ -36,7 +36,7 @@ public class Favorite {
 
         String[] listFavoriteWord = new String[Word.getData().size()];
         String[] listFavoriteWordMean = new String[Word.getData().size()];
-        String[] listFavoriteVerb  = new String[Word.getData().size()];
+        String[] listFavoriteVerb  = new String[Lesson.getData().size()];
 
         for (int i = 0; i < listFavoriteWord.length; i++){
             Favorite gecici = new Favorite();

@@ -18,9 +18,9 @@ public class WordActivity extends AppCompatActivity {
         wordSentence1 = findViewById(R.id.txt_word_sentence_1);
         wordSentence2 = findViewById(R.id.txt_word_sentence_2);
         wordSentence3 = findViewById(R.id.txt_word_sentence_3);
-
+//
         txt_Word.setText(getIntent().getStringExtra("word"));
-        wordMean.setText(getIntent().getStringExtra("means"));
+//        wordMean.setText(getIntent().getStringExtra("means"));
 
     }
 }

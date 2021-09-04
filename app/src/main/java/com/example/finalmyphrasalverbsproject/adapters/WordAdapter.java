@@ -1,7 +1,9 @@
 package com.example.finalmyphrasalverbsproject.adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,13 +28,15 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.CardHolder> {
     ArrayList<Word> mDataListWord;
     LayoutInflater inflater;
     List<String> selectedValuesWord;
-    Context context;
+    Context mcontext;
 
     public WordAdapter(Context context, ArrayList<Word> mDataListWord) {
         inflater = LayoutInflater.from(context);
         this.mDataListWord = mDataListWord;
-        this.context = context;
+        this.mcontext = context;
+        selectedValuesWord = new ArrayList<>();
     }
+
 
     @NonNull
     @Override
@@ -43,11 +47,32 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.CardHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CardHolder holder, int position) {
-        Word word = new Word();
+    public void onBindViewHolder(@NonNull CardHolder holder,@SuppressLint("RecyclerView") int position) {
+        Word word = mDataListWord.get(position);
         holder.txt_word.setText(mDataListWord.get(position).getWord());
-        holder.txt_mean.setText(mDataListWord.get(position).getMean());
-        
+
+        final String al = String.valueOf(mDataListWord.get(position));
+        holder.checkBox_fav.setText(al);
+        holder.checkBox_fav.setOnClickListener(v -> {
+            if (holder.checkBox_fav.isChecked()){
+                selectedValuesWord.add(al);
+                Toast.makeText(inflater.getContext(), "seçildi",Toast.LENGTH_SHORT).show();
+            }
+            else{
+                selectedValuesWord.remove(al);
+                Toast.makeText(inflater.getContext(), "iptal edildi", Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mcontext, WordActivity.class);
+                intent.putExtra("word", word.getWord());
+
+                mcontext.startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -67,7 +92,6 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.CardHolder> {
         public CardHolder(@NonNull View itemView) {
             super(itemView);
             txt_word = itemView.findViewById(R.id.txt_wrodNameGround);
-            txt_mean = itemView.findViewById(R.id.txt_meanNameGround);
             checkBox_fav = itemView.findViewById(R.id.checkbox_favorite_word);
 
         }

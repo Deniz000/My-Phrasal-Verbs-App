@@ -81,7 +81,7 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.CardHolder
 //        //notifyDataSetChanged();
 //    }
 //    public void copyİtem(int position, Lesson lessonToBeCopied){
-//        mDataList.add(position, lessonToBeCopied);
+//
 //    }
     @Override
     public int getItemCount() {
