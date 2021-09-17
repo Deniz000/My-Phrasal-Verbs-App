@@ -7,6 +7,7 @@ public class Favorite {
     private String lessonWord;
     private String lessonMean;
 
+    // constuctor oluşturup id leri o şekilde de alabilirim
     public String getLessonVerbsName() {
         return lessonVerbsName;
     }

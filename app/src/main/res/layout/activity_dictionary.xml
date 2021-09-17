@@ -12,19 +12,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.SearchView
+        <SearchView
             android:id="@+id/search_view_word"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:background="@drawable/card2_background"
             android:layout_margin="10dp"
             android:padding="3dp"
-            app:queryHint="Search for..."
-            app:iconifiedByDefault="false"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search for ..."
             android:clickable="true"
             android:elevation="10dp">
 
-        </androidx.appcompat.widget.SearchView>
+        </SearchView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView_word"

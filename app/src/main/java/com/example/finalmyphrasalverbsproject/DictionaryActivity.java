@@ -1,11 +1,11 @@
 package com.example.finalmyphrasalverbsproject;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.SearchView;
 
 import com.example.finalmyphrasalverbsproject.adapters.WordAdapter;
 import com.example.finalmyphrasalverbsproject.models.Word;
@@ -18,7 +18,7 @@ public class DictionaryActivity extends AppCompatActivity {
 
     RecyclerView recyclerView2;
     WordAdapter wordAdapter;
-    SearchView searchView;
+    android.widget.SearchView searchView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class DictionaryActivity extends AppCompatActivity {
         recyclerView2 = findViewById(R.id.recyclerView_word);
         searchView = findViewById(R.id.search_view_word);
 
+        searchView.clearFocus();
         recyclerView2.setHasFixedSize(true);
         recyclerView2.setLayoutManager(new LinearLayoutManager(this));
 

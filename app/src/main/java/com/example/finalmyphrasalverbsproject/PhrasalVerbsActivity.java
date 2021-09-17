@@ -1,25 +1,24 @@
 package com.example.finalmyphrasalverbsproject;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.CheckBox;
+import android.widget.SearchView;
 
 import com.example.finalmyphrasalverbsproject.adapters.LessonAdapter;
 import com.example.finalmyphrasalverbsproject.models.Lesson;
 
 import java.util.ArrayList;
-import java.util.Locale;
+
 
 public class PhrasalVerbsActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     LessonAdapter lessonAdapter;
-    androidx.appcompat.widget.SearchView searchView;
+    android.widget.SearchView searchView;
     CheckBox checkBox;
     ArrayList<Lesson> lessonArrayList;
     @Override
@@ -30,6 +29,8 @@ public class PhrasalVerbsActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         searchView = findViewById(R.id.search_view_phrasal_verbs);
         checkBox = findViewById(R.id.checkbox_favorite_verb);
+
+        searchView.clearFocus();
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
