@@ -16,20 +16,10 @@
         android:padding="15dp">
 
         <TextView
-            android:id="@+id/txt_wordOrverb"
+            android:id="@+id/txt_verbGround"
             android:layout_width="wrap_content"
-            android:visibility="invisible"
             android:layout_height="wrap_content"
             android:text="@string/words"
-            android:textColor="@color/blue"
-            android:textSize="28sp" />
-
-        <TextView
-            android:id="@+id/txt_mean"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="invisible"
-            android:text="@string/means"
             android:textColor="@color/blue"
             android:textSize="28sp" />
 

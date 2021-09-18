@@ -12,20 +12,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.finalmyphrasalverbsproject.R;
-import com.example.finalmyphrasalverbsproject.models.Favorite;
+import com.example.finalmyphrasalverbsproject.models.FavoriteVerb;
 
 import java.util.ArrayList;
 
 
-public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.CardHolder> {
+public class FavoriteVerbAdapter extends RecyclerView.Adapter<FavoriteVerbAdapter.CardHolder> {
 
-    ArrayList<Favorite> mDataListFavorite;
+    ArrayList<FavoriteVerb> mDataListFavoriteVerb;
     LayoutInflater inflater;
 
 
-    public FavoriteAdapter(Context context, ArrayList<Favorite> mfavoriteList) {
+    public FavoriteVerbAdapter(Context context, ArrayList<FavoriteVerb> mfavoriteList) {
         inflater = LayoutInflater.from(context);
-        this.mDataListFavorite = mfavoriteList;
+        this.mDataListFavoriteVerb = mfavoriteList;
 
     }
 
@@ -40,25 +40,22 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.CardHo
     @Override
     public void onBindViewHolder(@NonNull CardHolder holder, int position) {
 
-        holder.txt_word.setText(mDataListFavorite.get(position).getLessonWord());
-        holder.txt_word.setText(mDataListFavorite.get(position).getLessonVerbsName());
-        holder.txt_mean.setText(mDataListFavorite.get(position).getLessonMean());
+        holder.txt_verb.setText(mDataListFavoriteVerb.get(position).getLessonVerbsName());
     }
 
     @Override
     public int getItemCount() {
-        return mDataListFavorite.size();
+        return mDataListFavoriteVerb.size();
     }
 
     public class CardHolder extends RecyclerView.ViewHolder {
 
 
-        TextView txt_word, txt_mean;
+        TextView txt_verb;
         CheckBox checkBox_fav;
         public CardHolder(@NonNull View itemView) {
             super(itemView);
-            txt_word = itemView.findViewById(R.id.txt_wordOrverb);
-            txt_mean = itemView.findViewById(R.id.txt_mean);
+            txt_verb = itemView.findViewById(R.id.txt_verbGround);
             checkBox_fav = itemView.findViewById(R.id.checkbox_favorite_favorite);
 
         }

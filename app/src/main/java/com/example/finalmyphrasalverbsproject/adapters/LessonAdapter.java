@@ -7,17 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.finalmyphrasalverbsproject.PhrasalVerbsActivity;
 import com.example.finalmyphrasalverbsproject.R;
 import com.example.finalmyphrasalverbsproject.VerbsActivity;
-import com.example.finalmyphrasalverbsproject.models.Favorite;
+import com.example.finalmyphrasalverbsproject.models.FavoriteVerb;
 import com.example.finalmyphrasalverbsproject.models.Lesson;
 
 import java.util.ArrayList;
@@ -26,7 +24,7 @@ import java.util.List;
 public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.CardHolder> {
 
     ArrayList<Lesson> mDataList;
-    ArrayList<Favorite> mDataListCopy;
+    ArrayList<FavoriteVerb> mDataListCopy;
     LayoutInflater inflater;
     List<String> selectedValues;
     Context context;
