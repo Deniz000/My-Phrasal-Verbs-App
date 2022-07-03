@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalMyPhrasalVerbsProject">
         <activity
+            android:name=".Login_SignupActivity"
+            android:exported="true" />
+        <activity
             android:name=".VerbsActivity"
             android:exported="true" />
         <activity

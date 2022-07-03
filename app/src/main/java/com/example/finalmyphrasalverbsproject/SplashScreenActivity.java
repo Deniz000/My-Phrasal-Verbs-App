@@ -35,7 +35,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         bulutiki.animate().translationXBy(1200).setDuration(1000).setStartDelay(2000);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+            Intent intent = new Intent(SplashScreenActivity.this, Login_SignupActivity.class);
             startActivity(intent);
             finish();
         }, SPLASH_SCREEN);

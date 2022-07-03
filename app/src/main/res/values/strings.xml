@@ -25,4 +25,14 @@
     <string name="name">Name</string>
     <string name="verb_description">Verb Description</string>
     <string name="sentence_1">sentence_1</string>
+    <string name="facebook">facebook</string>
+    <string name="welcome_to_phrasal_verbs">Welcome to Phrasal Verbs</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="password_again">Password Again</string>
+    <string name="s_gn_up">Sıgn up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an account? |</string>
 </resources>
